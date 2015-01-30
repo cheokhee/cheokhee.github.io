@@ -37,6 +37,70 @@ From this point on, all you need to do is add new posts in the `_posts` director
 You might also want to learn [Markdown](https://help.github.com/articles/markdown-basics){:target="_blank"}, which is a lightweight markup language
 that uses a simple formatting syntax so that it can be easily converted to HTML.
 
+##The gory details
+
+Jekyll Now provides a nice way to get started without being too technical. But there is a good chance you want to change the layout
+and preview the changes on your local machine before publishing them on the internet. Moreover, you want to preview
+your changes as they would appear on GitHub Pages. Below are the steps I had to go through
+on my machine (Ubuntu 14.10):
+
+###Prerequisites
+
+The prerequisites ensure the successful installation of Jekyll. Here are the commands:
+
+~~~
+sudo apt-get install build-essential
+sudo apt-get install ruby2.1
+sudo apt-get install ruby-dev
+sudo apt-get install ruby-execjs
+sudo apt-get install zlib1g
+~~~
+
+###Install Jekyll
+Commands:
+
+~~~
+gem install jekyll
+gem install bundler
+~~~
+
+###Setup
+In the Git repository, create a file called Gemfile with these two lines:
+
+~~~
+source 'https://rubygems.org'
+gem 'github-pages'
+~~~
+
+###Install additional gems for GitHub Pages
+In the Git repository, type this command:
+
+~~~
+bundle install
+~~~
+
+###Publish your website locally
+In the Git repository, type this command:
+
+~~~
+bundle exec jekyll serve
+~~~
+
+###View your website locally
+
+~~~
+Point your browser to http://localhost:4000
+~~~
+
+###Writing and publishing drafts
+
+Put your drafts in the `_drafts` directory. Then type this command:
+
+~~~
+bundle exec jekyll serve --drafts
+~~~
+
+
 References:
 
 - [http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages){:target="_blank"}
