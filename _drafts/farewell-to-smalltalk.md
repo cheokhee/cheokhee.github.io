@@ -17,26 +17,41 @@ But I persevered. I eventually got over the proverbial hump.
 At some point, the light bulb just clicked. I was no longer struggling.
 I finally got it. I finally grokked object-oriented programming.
 
-The more I used Smalltalk, the more I was amazed by the simplicity of
-its syntax.
+The more I use Smalltalk, the more I like it.
+Because I like Smalltalk so much, I have relocated several times
+for Smalltalk jobs. Each relocation took me to a different state
+and a different time zone.
+
+And that brings me to my current job. My employer is
+in the home stretch of migrating our enterprise system
+from Smalltalk to Java. The Smalltalk system will be shut down
+soon. I have been writing less and less Smalltalk, and more and
+more Java over the last few years.
+
+I knew this day would come. I have long decided to face
+the cold hard reality of facts: the lack of Smalltalk jobs where I live.
+It no longer makes sense to relocate hundreds of miles for Smalltalk jobs.
+Besides, I have become very comfortable with using a variety of languages.
+
+Obviously, I have strong feelings for Smalltalk. Otherwise, I wouldn't
+be writing this article. Smalltalk will always have a special place
+in my heart. I love the simplicity of its syntax.
 The rules are extremely simple and consistent. I can hold all the rules
 in my head while programming. There is very little cognitive load.
+It simply appeals to the minimalist in me.
 
-Because I like Smalltalk so much, I have relocated several times
-for Smalltalk jobs. Each relocation took me to a different state.
-From the Eastern time zone to the Central time zone.
-And now in the Pacific time zone.
+More than anything, Smalltalk helped me grow as a developer.
+Overcoming that first paradigm shift makes subsequent paradigm shifts
+so much easier.
+It also made me curious
+about other languages. I have looked at many other languages.
+Inevitably, I compare the syntax to Smalltalk's.
+Of all the languages I looked at, the only one that comes
+close to Smalltalk's simplicity is Lisp.
 
-The simplicity of Smalltalk syntax is really unsurpassed.
+Anyway, life goes on.
+Is this a permanent goodbye?
+Who knows? We might cross paths again in the future.
 
-I have dabbled in several languages in the last few years.
-Each one has its unusual syntax.
-I must say Smalltalk is my favorite language because of its syntax.
-From that point on, learning a new programming language became a whole lot easier.
-To expand my horizon, I learned other languages such as Lisp, Prolog, Ruby, Python.
-
-That was when I realized Smalltalk was extremely influential in the design of
-many other languages.
-
-That is because learning a programming language is more than just knowing
-the syntax. It is also the thought process.
+Thank you Smalltalk. Thanks for making me a better developer.
+Thanks for taking me to Silicon Valley, where I met my wife.
