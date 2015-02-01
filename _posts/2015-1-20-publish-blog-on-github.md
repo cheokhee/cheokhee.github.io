@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Publishing a blog on GitHub
+description: Provides a quick start for setting up a website on GitHub using Jekyll. Also provides information on running Jekyll locally.
 ---
 
 I have been looking for a simple and minimalistic approach to publishing a blog.
