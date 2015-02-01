@@ -29,7 +29,7 @@ from Smalltalk to Java. Pretty soon, the Smalltalk system will be shut down.
 And that will be the end of Smalltalk in our company.
 
 I knew this day would come. I have long decided to face
-the cold hard reality of facts: the lack of Smalltalk jobs
+the cold hard facts of reality: the lack of Smalltalk jobs
 and the abundance of Java jobs where I live.
 It no longer makes sense to relocate hundreds of miles for Smalltalk jobs.
 Besides, I have become very comfortable with using a variety of languages.
