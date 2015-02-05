@@ -278,6 +278,23 @@ footer {
   text-align: center;
 }
 
+pre {
+  font-family: $mono;
+  background-color: $lightGray;
+  padding: 5px;
+}
+
+code {
+  font-family: $mono;
+  font-size: 15px;
+  color: $black;
+  background: $lightGray;
+}
+
+li code {
+  padding: 2px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
