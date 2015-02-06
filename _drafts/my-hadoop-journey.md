@@ -3,10 +3,7 @@ layout: post
 title: My Hadoop journey
 ---
 
-Hadoop is a big subject. I am going to approach it this way:
-
-1. Do some hands-on work
-2. Find out what I just did
+Hadoop is a big subject. I am going to approach it one small bite at a time.
 
 ##Prerequisites
 
@@ -19,25 +16,75 @@ Hadoop is a big subject. I am going to approach it this way:
 
 ####Environment variables
 
-- JAVA_HOME (set to the root of your Java installation)
+- JAVA_HOME (set to the root of my Java installation)
 - PATH (append /path/to/hadoop-installation/bin to the existing PATH)
+- HADOOP_PREFIX (set to the root of my Hadoop installation)
 
 ####SSH setup
 
-You need to be able to ssh to localhost without a password. Try this command:
+Hadoop requires that I be able to ssh to localhost without a password. Here's the command to check:
 
 ~~~
 ssh localhost
 ~~~
 
-If you are prompted for a password, do the following:
+Here's what needs to be done:
 
 ~~~
 ssh-keygen -t rsa -P ''
 cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
 ~~~
 
-hadoop jar hadoop-2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar <command> <input dir> <output dir>
-#output dir must not exist
+##Standalone mode
 
-hadoop jar hadoop-2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar wordcount work_hadoop/ output
+This is the mode where Hadoop is run as a single Java process.
+
+###Example #1
+
+Count all the words in the input files.
+
+####Step #1. Prepare input files
+
+Create a new directory and populate it with text files (I just copy $HADOOP_PREFIX/etc/hadoop/*.xml to this directory)
+
+####Step #2. Run this command
+
+~~~
+hadoop jar \
+$HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar \
+wordcount <input_dir> <output_dir>
+~~~
+
+`<input_dir>` is the directory created in step #1. `<output_dir>` must not already exist.
+
+####Step #3. Look at the files in the output directory
+
+###Example #2
+
+Solve a sudoku puzzle
+
+####Step #1. Create a puzzle file
+
+An example can be found in the Hadoop source package
+(hadoop-2.6.0-src/hadoop-mapreduce-project/hadoop-mapreduce-examples/src/main/java/org/apache/hadoop/examples/dancing/puzzle1.dta).
+Here's the contents of the file:
+
+~~~
+8 5 ? 3 9 ? ? ? ?
+? ? 2 ? ? ? ? ? ?
+? ? 6 ? 1 ? ? ? 2
+? ? 4 ? ? 3 ? 5 9
+? ? 8 9 ? 1 4 ? ?
+3 2 ? 4 ? ? 8 ? ?
+9 ? ? ? 8 ? 5 ? ?
+? ? ? ? ? ? 2 ? ?
+? ? ? ? 4 5 ? 7 8
+~~~
+
+####Step #2. Run this command
+
+~~~
+hadoop jar \
+$HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar \
+sudoku puzzle1.dta
+~~~
