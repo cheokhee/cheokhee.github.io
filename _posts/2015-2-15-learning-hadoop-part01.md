@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Hadoop journey, part &#35;1
+title: Learning Hadoop, part &#35;1
 ---
 
 Hadoop is a big subject. I am going to approach it one small bite at a time.
