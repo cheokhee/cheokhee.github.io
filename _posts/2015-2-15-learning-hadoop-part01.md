@@ -17,7 +17,7 @@ Hadoop is a big subject. I am going to approach it one small bite at a time.
 ####Environment variables
 
 - JAVA_HOME (set to the root of my Java installation)
-- PATH (append /path/to/hadoop-installation/bin to the existing PATH)
+- PATH (append /path/to/hadoop-installation/bin and /path/to/hadoop-installation/sbin to the existing PATH)
 - HADOOP_PREFIX (set to the root of my Hadoop installation)
 
 ####SSH setup
@@ -87,4 +87,14 @@ Here's the contents of the file:
 hadoop jar \
 $HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar \
 sudoku puzzle1.dta
+~~~
+
+###Example #3
+
+Calculate &pi;. Run this command:
+
+~~~
+hadoop jar \
+$HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar \
+pi 10 100
 ~~~
