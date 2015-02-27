@@ -54,15 +54,8 @@ sudo apt-get install build-essential
 sudo apt-get install ruby2.1
 sudo apt-get install ruby-dev
 sudo apt-get install ruby-execjs
-sudo apt-get install zlib1g
-~~~
-
-###Install Jekyll
-Commands:
-
-~~~
-gem install jekyll
-gem install bundler
+sudo apt-get install zlib1g-dev
+sudo gem install bundler
 ~~~
 
 ###Setup
@@ -73,7 +66,7 @@ source 'https://rubygems.org'
 gem 'github-pages'
 ~~~
 
-###Install additional gems for GitHub Pages
+###Install Jekyll
 In the Git repository, type this command:
 
 ~~~
