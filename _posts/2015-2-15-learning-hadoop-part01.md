@@ -16,7 +16,6 @@ Hadoop is a big subject. I am going to approach it one small bite at a time.
 
 ####Environment variables
 
-- JAVA_HOME (set to the root of my Java installation)
 - PATH (append /path/to/hadoop-installation/bin and /path/to/hadoop-installation/sbin to the existing PATH)
 - HADOOP_PREFIX (set to the root of my Hadoop installation)
 
@@ -32,7 +31,7 @@ Here's what needs to be done:
 
 ~~~
 ssh-keygen -t rsa -P ''
-cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
+cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 ~~~
 
 ##Standalone mode
